@@ -169,3 +169,22 @@ footer {
     border-top: 1px solid #fff;
     color: white;
 }
+
+.carousel-agua {
+
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.carousel img {
+
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.h2-index{
+    text-align: center;
+}
