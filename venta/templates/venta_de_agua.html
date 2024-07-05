@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block body %}
+<div class="product-description">
+  <p>Nos dedicamos a garantizar que nuestros clientes disfruten de la mejor agua en Chile. Para lograrlo, ofrecemos una selección de productos de la más alta calidad. ¿Qué puedes esperar para elegirlos?</p>
+
+  <p>Confía en nosotros para que puedas refrescarte. Nuestra pasión por los detalles y nuestro compromiso con la excelencia nos distinguen. ¡Bienvenido a probar nuestras variedades!</p>
+</div>
+
+
+<h2 class="h2-products">Nuestros productos</h2>
+
+<div class="container-card">
+    <div class="card">
+        <img src="{% static 'images/agua_limon.jpg' %}" class="card-img-top" alt="Imagen de rodillo">
+        <div class="card-body">
+          <h5 class="card-title">Agua con limón</h5>
+          <p class="card-text" style="color:black;">El agua sabor a limón combina lo mejor de ambos mundos: la frescura del agua con un toque cítrico. Es una alternativa ligera y deliciosa para quienes desean variar su hidratación. El limón aporta vitamina C y un sabor refrescante. Puedes disfrutarla fría o con hielo para una experiencia aún más placentera.</p>
+          <p class="btn-card">
+            <a href="#" class="btn btn-info">Comprar</a>
+          <p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/agua_con_gas.webp' %}" class="card-img-top" alt="Imagen de cartera">
+        <div class="card-body">
+          <h5 class="card-title">Agua con gas</h5>
+          <p class="card-text">El agua con gas es una opción refrescante y burbujeante. Su efervescencia la hace ideal para quienes buscan una experiencia diferente al beber agua. Puedes disfrutarla sola o combinarla con limón o frutas para darle un toque aún más especial. Perfecta para momentos en los que deseas algo más que agua simple.</p>
+          <p class="btn-card">
+            <a href="#" class="btn btn-info">Comprar</a>
+          <p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static 'images/bidon_agua.jpeg' %}" class="card-img-top" alt="Imagen de banda antimareo">
+        <div class="card-body">
+          <h5 class="card-title">Bidones</h5>
+          <p class="card-text">Descripción: El agua en bidón es práctica y versátil. Viene en envases grandes, lo que la hace ideal para hogares, oficinas o eventos. Es una excelente opción para mantenerse hidratado sin preocuparse por quedarse sin agua. Además, su formato reutilizable contribuye al cuidado del medio ambiente.</p>
+          <p class="btn-card">
+            <a href="#" class="btn btn-info">Comprar</a>
+          <p>
+        </div>
+    </div>
+</div>
+{% endblock %}

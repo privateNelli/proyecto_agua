@@ -1,0 +1,171 @@
+th, td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-logo{
+    height: 25px;
+}
+
+.a-base:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-signin, .form-signup{
+    width: 40%;
+    margin: auto;
+    color: black;
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    border: 1px solid rgba(0,0,0,.5);
+}
+
+.h2-signin, .h2-signup{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.form-signin button, .form-signup button {
+    width: 100%;
+    border: 0px;
+    padding: 10px;
+    /* color: white; */
+    background-color: rgb(13, 202, 240);
+}
+
+.form-signin button:hover, .form-signup button:hover {
+    background-color: rgba(13, 202, 240, .85);
+}
+
+.form-signup .helptext, .form-signup ul{
+    display: none;
+}
+
+.error-mssg {
+    color: red;
+}
+
+.h2-products{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.container-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    color: black;
+    align-items: stretch;
+}
+
+.container-card .card{
+    width: 30%;
+    padding: 20px;
+}
+
+.container-card .card .btn-card{
+    width: 100%;
+}
+.container-card .card .btn-card a{
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.product-description{
+    background: rgba(0, 0, 0, .1);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.p-index{
+    width: 80%;
+    margin: auto;
+    background: rgba(255, 255, 255, .5);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.contact {
+    background: #1c232e;
+    display: flex;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.contact img {
+    height: 50px;
+}
+
+.contact img:hover{
+    opacity: .7;
+}
+
+.contact-num p {
+    text-decoration: underline;
+    color: white;
+}
+
+.contact .contact-num{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-num #whatsapp{
+    margin-bottom: 10px;
+}
+
+.contact .contact-social{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact .contact-soc-about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-soc-about .about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 40%;
+    align-self: center;
+}
+
+.about a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.about a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1c232e;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #fff;
+    color: white;
+}

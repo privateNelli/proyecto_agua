@@ -1,0 +1,72 @@
+{%extends "base.html" %}
+{% load static %}
+
+{% block title%} Gestion de Pedidos{% endblock %}
+
+
+
+{% block body%}
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+        <h2>Gestión de pedidos</h2>
+        <div class="card p-3">
+            <div class="card-body">
+                <form action="/registrarPedido/" method="POST">{% csrf_token %}
+                    <div class="form-group mb-3">
+                        <input type="text" id="txtCodigo" name="txtCodigo" class="form-control" placeholder="Código" minlength="6" maxlength="6" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre" maxlength="50" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="number" id="numCantidad" name="numCantidad" class="form-control" placeholder="Cantidad" min="1" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Guardar Pedido</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8">
+        
+            <h1>Listado de Pedidos</h1>
+            <div class="table-responsive py-2">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Código Pedido</th>
+                            <th>Tipo de Agua</th>
+                            <th>Cantidad Bidones (20 L)</th>
+                            <th colspan="2">Opciones</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        {% for c in pedidos %}
+                        <tr>
+                            <td>{{forloop.counter}} </td>
+                            <td>{{ c.codigo }}</td>
+                            <td>{{ c.nombre }}</td>
+                            <td>{{ c.cantidad }}</td>
+                            <td><a href="edicionPedido/{{c.codigo}}" class="btn btn-info">Editar Pedido</a></td>
+                            <td><a href="eliminarPedido/{{c.codigo}}" class="btn btn-danger btnEliminacion">Eliminar Pedido</a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+    {% endblock %}
+
+
+
+

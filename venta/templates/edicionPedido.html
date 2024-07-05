@@ -1,0 +1,39 @@
+{%extends "base.html" %}
+
+{% load static %}
+
+{% block title%} Edicion de Pedidos{% endblock %}
+
+
+
+{% block body%}
+<div class = "row">
+    <div class="col-md-4 offset-md-4">
+        <h2>Edicion de pedidos</h2>
+        <div class="card p-3">
+            <div class="card-body">
+                <form action="/editarPedido/" method="POST">{% csrf_token %}
+                    <div class="form-group mb-3">
+                        <input type="text" id="txtCodigo" name="txtCodigo" value="{{pedido.codigo}}" class="form-control" placeholder="Código" 
+                        minlength="6" maxlength="6" readonly required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="text" id="txtNombre" name="txtNombre" value="{{pedido.nombre}}" class="form-control" placeholder="Nombre" 
+                        maxlength="50" required>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <input type="number" id="numCantidad" name="numCantidad" value="{{pedido.cantidad}}" class="form-control" placeholder="Cantidad" min="1" max="100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success btn-block text-white">Guardar Edicion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
