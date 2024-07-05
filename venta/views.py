@@ -19,7 +19,7 @@ def registrarPedido(request):
     cantidad = request.POST['numCantidad']
 
     pedido = Pedido.objects.create(codigo=codigo, nombre=nombre, cantidad=cantidad)
-    return redirect('/')
+    return redirect('home')
 
 def edicionPedido(request, codigo):
     pedido = Pedido.objects.get(codigo=codigo)
@@ -35,13 +35,13 @@ def editarPedido(request):
     pedido.cantidad = cantidad
     pedido.save()
 
-    return redirect('/')
+    return redirect('home')
 
 
 def eliminarPedido(request, codigo):
     pedido = Pedido.objects.get(codigo=codigo)
     pedido.delete()
-    return redirect('/')
+    return redirect('home')
     
 
 def signin(request):

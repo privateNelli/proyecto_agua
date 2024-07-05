@@ -171,10 +171,15 @@ footer {
 }
 
 .carousel-agua {
-
     margin-bottom: 20px;
     width: 80%;
     margin: auto;
+
+}
+
+.carousel-agua div{
+
+    width: 100%;
 
 }
 
@@ -187,4 +192,9 @@ footer {
 
 .h2-index{
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.space {
+    height: 300px;
 }
