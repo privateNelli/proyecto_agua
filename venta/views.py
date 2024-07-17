@@ -89,3 +89,6 @@ def signout(request):
 
 def venta_de_agua(request):
     return render(request, 'venta_de_agua.html')
+
+def contacto(request):
+    return render(request, 'contacto.html')

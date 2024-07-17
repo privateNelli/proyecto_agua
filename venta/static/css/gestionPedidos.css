@@ -12,9 +12,17 @@ th, td{
     color: black;
 }
 
+body{
+    background-color: #1c232e;
+}
+
 .nav-container{
     display: flex;
     justify-content: space-between;
+}
+
+.navbar{
+    color: #324769;
 }
 
 .form-signin, .form-signup{
@@ -62,6 +70,14 @@ th, td{
     padding-bottom: 10px;
 }
 
+.wasap{
+    width: 64px;
+    height: 64px;
+}
+h3,h1,p{
+    color: white;
+}
+
 .container-card {
     width: 100%;
     display: flex;
@@ -69,6 +85,14 @@ th, td{
     margin-bottom: 40px;
     color: black;
     align-items: stretch;
+}
+
+.card-text{
+    color: black;
+}
+
+ul li{
+    color: white;
 }
 
 .container-card .card{
@@ -190,6 +214,7 @@ footer {
 
 }
 
+
 .h2-index{
     text-align: center;
     margin-bottom: 20px;
@@ -197,4 +222,12 @@ footer {
 
 .space {
     height: 300px;
+}
+
+h2{
+    color: white;
+}
+
+label{
+    color: white;
 }
